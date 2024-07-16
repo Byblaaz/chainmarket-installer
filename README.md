@@ -51,12 +51,19 @@ Follow the on-screen instructions to complete the installation process.
 To verify if everything is synchronized correctly, you can use the following command to display the latest logs of the Polo1 container:
 
 ```sh
-docker logs --tail 1 polo1
+docker logs --tail 1 mark1
 ```
 
 ### Result
 { message: 'success', clientIP: 'x' }
 
+
+### Troubleshoot
+
+To stop the containers use
+```sh 
+docker stop polo1 mark1
+```
 
 
 
