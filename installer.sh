@@ -78,6 +78,15 @@ if [ -z "$URL_WS" ]; then
 fi
 
 
+# Installation jq
+sudo apt-get install jq -y
+
+if jq --version > /dev/null 2>&1; then
+    echo "🟢jq successfully installed."
+else
+    echo "🔴Error: jq installation failed."
+fi
+
 #Install websocat for testing
 echo "-------- Installation websocat --------"
 WEBOSCAT_URL="https://github.com/vi/websocat/releases/latest/download/websocat.x86_64-unknown-linux-musl"
